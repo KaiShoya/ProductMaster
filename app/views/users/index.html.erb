@@ -1,3 +1,4 @@
+<!--
 <p id="notice"><%= notice %></p>
 
 <h1>ログイン画面</h1>
@@ -35,3 +36,24 @@
 <div class=></div>
 
 <%= link_to 'New user', new_user_path %>
+-->
+
+<table>
+  <form action="../items">
+  <tr>
+    <td>メールアドレス</td>
+    <td>
+      <input type="text" name="email" value="">
+    </td>
+  </tr>
+  <tr>
+    <td>パスワード</td>
+    <td>
+      <input type="password" name="password" value="">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" value="ログイン" class="btn btn-default"></td>
+  </tr>
+</table>
+<%= link_to 'サインイン', new_user_path %>
