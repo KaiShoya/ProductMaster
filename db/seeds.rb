@@ -8,6 +8,12 @@
 
 
 unless Rails.env.production?
+
+  User.create(mail: "test1@email.com", name: "TestUser1", active: 1)
+  User.create(mail: "test2@email.com", name: "TestUser2", active: 1)
+  User.create(mail: "test3@email.com", name: "TestUser3", active: 1)
+  User.create(mail: "test4@email.com", name: "TestUser4", active: 1)
+
   Item.create(code: 4900001, revision: 1, user_id: 1, name: "SEEDテスト1")
   Item.create(code: 4900002, revision: 1, user_id: 2, name: "SEEDテスト2")
   Item.create(code: 4900003, revision: 1, user_id: 3, name: "SEEDテスト3")

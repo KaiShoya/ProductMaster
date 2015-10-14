@@ -10,31 +10,32 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :id %><br>
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :mail %><br>
-    <%= f.text_field :mail %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :active %><br>
-    <%= f.text_field :active %>
-  </div>
-  <div class="field">
-    <%= f.label :created_at %><br>
-    <%= f.datetime_select :created_at %>
-  </div>
-  <div class="field">
-    <%= f.label :modified_at %><br>
-    <%= f.datetime_select :modified_at %>
-  </div>
+  <table class="table table-striped">
+    <tr class="field">
+      <td><%= f.label :id %></td>
+      <td><%= f.text_field :id %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :mail %></td>
+      <td><%= f.text_field :mail %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :name %></td>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :active %></td>
+      <td><%= f.text_field :active %></td>
+    </tr>
+    <tr class="field">
+     <td><%= f.label :created_at %></td>
+      <td><%= f.datetime_select :created_at %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :modified_at %></td>
+      <td><%= f.datetime_select :modified_at %></td>
+    </tr>
+    </table>
   <div class="actions">
     <%= f.submit %>
   </div>

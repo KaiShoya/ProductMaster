@@ -5,12 +5,6 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-
-    @user = Hash.new
-    @user[:name] = 'Kai Shoya'
-    @user[:username] = 'shoya'
-    @user[:location] = 'miyazaki,Japan'
-    @user[:about] = 'Nice to meet you.'
   end
 
   # GET /users/1

@@ -1,34 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Id:</strong>
-  <%= @user.id %>
-</p>
-
-<p>
-  <strong>Mail</strong>
-  <%= @user.mail %>
-</p>
-
-<p>
-  <strong>Name</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Active</strong>
-  <%= @user.active %>
-</p>
-
-<p>
-  <strong>Created_at</strong>
-  <%= @user.created_at %>
-</p>
-
-<p>
-  <strong>Modified_at</strong>
-  <%= @user.modified_at %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<table class="table table-striped">
+  <tr>
+    <td><strong>Id:</strong></td>
+    <td><%= @user.id %></td>
+  </tr>
+  <tr>
+    <td><strong>Mail</strong></td>
+    <td><%= @user.mail %></td>
+  </tr>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><%= @user.name %></td>
+  </tr>
+  <tr>
+    <td><strong>Active</strong></td>
+    <td><%= @user.active %></td>
+  </tr>
+  <tr>
+    <td><strong>Created_at</strong></td>
+    <td><%= @user.created_at %></td>
+  </tr>
+  <tr>
+    <td><strong>Modified_at</strong></td>
+    <td><%= @user.modified_at %></td>
+  </tr>
+</table>
+<%= link_to '編集', edit_user_path(@user) %> |
+<%= link_to '戻る', users_path %>
