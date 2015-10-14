@@ -2,48 +2,33 @@
 
 <p>
   <strong>Id:</strong>
-  <%= @item.id %>
+  <%= @user.id %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @item.user_id %>
+  <strong>Mail</strong>
+  <%= @user.mail %>
 </p>
 
 <p>
-  <strong>Code:</strong>
-  <%= @item.code %>
+  <strong>Name</strong>
+  <%= @user.name %>
 </p>
 
 <p>
-  <strong>Revision:</strong>
-  <%= @item.revision %>
+  <strong>Active</strong>
+  <%= @user.active %>
 </p>
 
 <p>
-  <strong>Maker:</strong>
-  <%= @item.maker %>
+  <strong>Created_at</strong>
+  <%= @user.created_at %>
 </p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @item.name %>
+  <strong>Modified_at</strong>
+  <%= @user.modified_at %>
 </p>
 
-<p>
-  <strong>Size:</strong>
-  <%= @item.size %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= @item.picture %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

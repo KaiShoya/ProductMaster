@@ -5,14 +5,17 @@
 <div class="row">
 <% @items.each do |item| %>
   <div class="col-md-4">
+      <div class="box">
         <h3><%= item.code %></h3>
         <p>revision: <%= item.revision %></p>
         <p><%= item.maker %> <%= item.name %> <%= item.size %> <%= item.price %></p>
-        <p><%= link_to 'Show', item %> <%= link_to 'Edit', edit_item_path(item) %>
-           <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><%= link_to '詳細を見る', item %><!-- <%= link_to 'Edit', edit_item_path(item) %> --></p>
+      </a>
+  	</div>
   </div>
 <% end %>
 </div>
-<div class="row">
-<%= link_to '新規商品の登録', new_item_path, class: "btn btn-default" %>
+<div class="row newbutton">
+	<%= link_to '新規商品の登録', new_item_path, class: "btn btn-default" %>
 </div>
+

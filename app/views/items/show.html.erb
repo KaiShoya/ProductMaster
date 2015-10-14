@@ -1,49 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Id:</strong>
-  <%= @item.id %>
-</p>
+<table border="1">
+  <tr>
+    <td class="item_show_left"><strong>Id</strong></td>
+    <td class="item_show_right"><%= @item.id %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>User</strong></td>
+    <td class="item_show_right"><%= @item.user_id %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Code</strong></td>
+    <td class="item_show_right"><%= @item.code %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Revision</strong></td>
+    <td class="item_show_right"><%= @item.revision %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Maker</strong></td>
+    <td class="item_show_right"><%= @item.maker %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Name</strong></td>
+    <td class="item_show_right"><%= @item.name %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Size</strong></td>
+    <td class="item_show_right"><%= @item.size %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Price</strong></td>
+    <td class="item_show_right"><%= @item.price %></td>
+  </tr>
+  <tr>
+    <td class="item_show_left"><strong>Picture</strong></td>
+    <td class="item_show_right"><%= @item.picture %></td>
+  </tr>
+</table>
 
-<p>
-  <strong>User:</strong>
-  <%= @item.user_id %>
-</p>
+<%= link_to '編集', edit_item_path(@item) %> |
+<%= link_to '削除', @item, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to '戻る', items_path %>
 
-<p>
-  <strong>Code:</strong>
-  <%= @item.code %>
-</p>
-
-<p>
-  <strong>Revision:</strong>
-  <%= @item.revision %>
-</p>
-
-<p>
-  <strong>Maker:</strong>
-  <%= @item.maker %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
-
-<p>
-  <strong>Size:</strong>
-  <%= @item.size %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= @item.picture %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>

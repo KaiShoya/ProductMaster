@@ -1,3 +1,35 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.box {
+	border: 2px solid;
+	border-color: #4f4f4f;
+	border-radius: 10px;
+	margin: 2px 0px;
+}
+
+.newbutton {
+	margin-top: 5px;
+	padding-left: 15px;
+}
+
+.item_show_left {
+	background-color: #acacac;
+	width: 70px;
+}
+
+.item_show_right {
+	width: 300px;
+}
+
+.actions {
+	margin-top: 5px;
+}
+
+tr {
+	padding: 5px;
+}
+td {
+	padding: 5px;
+}

@@ -14,15 +14,17 @@
   </thead>
 
   <tbody>
-    <% @users.each do |tag| %>
+    <% @users.each do |user| %>
       <tr>
-        <td><%= tag.item_id %></td>
-        <td><%= tag.name %></td>
-        <td><%= tag.created_at %></td>
-        <td><%= tag.modified_at %></td>
-        <td><%= link_to 'Show', tag %></td>
-        <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
-        <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= user.id %></td>
+        <td><%= user.mail %></td>
+        <td><%= user.name %></td>
+        <td><%= user.active %></td>
+        <td><%= user.created_at %></td>
+        <td><%= user.modified_at %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Tag', new_tag_path %>
+<%= link_to 'New user', new_user_path %>

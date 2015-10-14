@@ -10,44 +10,48 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :id %><br>
-    <%= f.number_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :code %><br>
-    <%= f.number_field :code %>
-  </div>
-  <div class="field">
-    <%= f.label :revision %><br>
-    <%= f.number_field :revision %>
-  </div>
-  <div class="field">
-    <%= f.label :maker %><br>
-    <%= f.text_field :maker %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :size %><br>
-    <%= f.text_field :size %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.number_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
-  </div>
+  
+  <table border="1">
+    <tr class="field">
+      <td><%= f.label :id %></td>
+      <td><%= f.number_field :id %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :user_id %></td>
+      <td><%= f.number_field :user_id %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :code %></td>
+      <td><%= f.number_field :code %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :revision %></td>
+      <td><%= f.number_field :revision %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :maker %></td>
+      <td><%= f.text_field :maker %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :name %></td>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :size %></td>
+      <td><%= f.text_field :size %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :price %></td>
+      <td><%= f.number_field :price %></td>
+    </tr>
+    <tr class="field">
+      <td><%= f.label :picture %></td>
+      <td><%= f.text_field :picture %></td>
+    </tr>
+  </table>
+  
   <div class="actions">
     <%= f.submit nil,class: "btn btn-primary" %>
   </div>
+  
 <% end %>
