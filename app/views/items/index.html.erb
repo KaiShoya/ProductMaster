@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Listing Items</h1>
+<!-- <h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Listing Items</h1> -->
 
 <div class="row">
 <% @items.each do |item| %>
@@ -9,6 +9,7 @@
         <h3><%= item.code %></h3>
         <p>revision: <%= item.revision %></p>
         <p><%= item.maker %> <%= item.name %> <%= item.size %> <%= item.price %></p>
+        <p><%= image_tag items_picture_path(item), :class => "image" %></p>
         <p><%= link_to '詳細を見る', item %><!-- <%= link_to 'Edit', edit_item_path(item) %> --></p>
       </a>
   	</div>

@@ -61,6 +61,20 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show_picture
+    pic = Item.find(params[:id]).picture
+    if pic
+      send_data pic, :type => 'image/jpeg', :disposition => "inline"
+    else
+      raise ActionController::RoutingError.new('Picture not found')
+    end
+  end
+
+  def show_image
+    @image = Item.find(params[:id])
+    send_data @image.picture, :type => 'image/jpeg', :disposition => 'inline'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item

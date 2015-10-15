@@ -35,11 +35,11 @@
   </tr>
   <tr>
     <td><strong>Picture</strong></td>
-    <td><%= @item.picture %></td>
+    <td><%= image_tag items_picture_path(@item) %></td>
   </tr>
 </table>
 
 <%= link_to '編集', edit_item_path(@item) %> |
-<%= link_to '削除', @item, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to '削除', @item, method: :delete, data: { confirm: '削除しますか?' } %> |
 <%= link_to '戻る', items_path %>
 

@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  resources :tags
+  get 'search/result' => 'search#result'
+  get 'items_picture/:id' => 'items#show_picture', as: 'items_picture'
+
   resources :tags
   resources :items
   resources :users
+  resources :search
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20151013053552) do
     t.string   "name",       limit: 255
     t.string   "size",       limit: 255
     t.integer  "price",      limit: 4
-    t.binary   "picture",    limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.binary   "picture",    limit: 16777215
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "tags", force: :cascade do |t|

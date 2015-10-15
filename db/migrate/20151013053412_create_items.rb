@@ -9,7 +9,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :name
       t.string :size
       t.integer :price
-      t.binary :picture
+      t.binary :picture, limit: 2000000
 
       t.timestamps null: false
     end
